@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Turizmu Irabere</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: rgba(0, 60, 80, 0.95);
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+      font-weight: 500;
+    }
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('background.jpg') center center/cover no-repeat;
+      height: 100vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.4);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .btn-explore {
+      background-color: #009688;
+      color: white;
+      border-radius: 30px;
+      padding: 10px 25px;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+    .btn-explore:hover {
+      background-color: #00796b;
+    }
+
+    /* About Section */
+    #about {
+      padding: 60px 0;
+    }
+    #about h2 {
+      color: #004d40;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    #about p {
+      color: #333;
+      text-align: justify;
+    }
+
+    /* Objetivu Section */
+    #objective {
+      background-color: #e0f7fa;
+      padding: 60px 0;
+    }
+    #objective h2 {
+      color: #004d40;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    #objective ul {
+      list-style-type: square;
+      margin-left: 20px;
+    }
+
+    /* Benefisiu Section */
+    #benefit {
+      padding: 60px 0;
+    }
+    #benefit h2 {
+      color: #004d40;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    #benefit .card {
+      border: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    #benefit .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Turizmu Irabere</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon text-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Kona-ba</a></li>
+          <li class="nav-item"><a class="nav-link" href="#objective">Objetivu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#benefit">Benefisiu</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>BEM-VINDO MAI TURIZMU IRABERE</h1>
+      <p>Promove Beleza Natural no Kultura Suco Irabin de Cima</p>
+      <a href="#about" class="btn btn-explore">Esplora Agora</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2>Suco Irabin de Cima</h2>
+          <p>
+            Suco Irabin de Cima lokaliza iha Posto Administrativu Uato-Carbau, Munisípiu Viqueque. 
+            Suku ne’e iha fatin naturál furak hanesan Irabere (Mota Bo’ot), Loi-Ulo, no Bahatata.
+            Nia komunidade iha kultura no tradisaun riku, maibé limitasaun asesu informasaun
+            halo promosaun turizmu difisil. Portal Turizmu Irabere sai hanesan solusaun ida atu 
+            promove destinasaun, kultura, no oportunidade komunidade lokál.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img src="about.jpg" alt="Irabere" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Objective Section -->
+  <section id="objective">
+    <div class="container">
+      <h2 class="text-center">Objetivu Portal</h2>
+      <ul>
+        <li>Promove destinasaun turizmu lokál iha Suco Irabin de Cima.</li>
+        <li>Valoriza eransa kultura no natureza lokál.</li>
+        <li>Kria plataforma online atu fasilita asesu informasaun.</li>
+        <li>Fo oportunidade ekonomika ba komunidade lokál.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Benefit Section -->
+  <section id="benefit">
+    <div class="container">
+      <h2 class="text-center">Benefisiu Portal</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="card p-4">
+            <h5>Ba Estudante</h5>
+            <p>Dezenvolvimentu portal ne’e ajuda estudante hadia abilidade iha área teknika informátika.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4">
+            <h5>Ba Fatin Turizmu</h5>
+            <p>Promosaun fatin turistiku Irabere bele atrai vizitante no aumenta renda komunidade.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4">
+            <h5>Ba Instituisaun</h5>
+            <p>Projeitu ne’e sai hanesan referénsia edukativu ba peskiza no inovasaun lokal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Portal Turizmu Irabere | Desenvolvido ho Amor ba Timor-Leste 🇹🇱</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
